@@ -7,11 +7,10 @@ echo "ACTOR: $GITHUB_ACTOR"
 
 
 echo '=================== Build site ==================='
-cd output
 bundle exec jekyll build
 
 echo '=================== Publish to GitHub Pages ==================='
-cd output
+cd _site
 remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 remote_branch=${GH_PAGES_BRANCH:=gh-pages}
 git init
