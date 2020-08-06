@@ -17,6 +17,11 @@ chmod 777 /github/workspace/_site
 
 bundle install
 
+if [ -f build.sh ]; then
+    echo '=================== Running extra setup ==================='
+    sh build.sh
+fi
+
 echo '=================== Build site ==================='
 bundle exec jekyll build
 
