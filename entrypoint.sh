@@ -6,6 +6,8 @@ echo "REPO: $GITHUB_REPOSITORY"
 echo "ACTOR: $GITHUB_ACTOR"
 
 echo '=================== Prepare bundle ==================='
+touch /github/workspace/Gemfile.lock
+chmod 666 /github/workspace/Gemfile.lock
 bundle install
 
 echo '=================== Build site ==================='
