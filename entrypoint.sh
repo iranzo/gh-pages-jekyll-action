@@ -5,6 +5,8 @@ set -e
 echo "REPO: $GITHUB_REPOSITORY"
 echo "ACTOR: $GITHUB_ACTOR"
 
+echo '=================== Prepare bundle ==================='
+bundle install
 
 echo '=================== Build site ==================='
 bundle exec jekyll build
