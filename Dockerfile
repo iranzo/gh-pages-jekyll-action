@@ -1,4 +1,4 @@
-FROM jekyll:latest
+FROM jekyll/jekyll
 
 LABEL "com.github.actions.name"="Jekyll for GitHub Pages"
 LABEL "com.github.actions.description"="Builds and deploys the Jekyll project to GitHub Pages"
