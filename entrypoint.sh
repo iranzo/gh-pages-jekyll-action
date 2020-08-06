@@ -26,7 +26,7 @@ fi
 cd ${SOURCE_FOLDER:=.}
 
 echo '=================== Build site ==================='
-bundle exec jekyll build
+bundle exec jekyll build -s ${SOURCE_FOLDER}
 
 echo '=================== Publish to GitHub Pages ==================='
 cd _site
