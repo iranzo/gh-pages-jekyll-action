@@ -12,6 +12,9 @@ chmod 666 /github/workspace/Gemfile.lock
 mkdir -p /github/workspace/.jekyll-cache
 chmod 777 /github/workspace/.jekyll-cache
 
+mkdir -p /github/workspace/_site
+chmod 777 /github/workspace/_site
+
 bundle install
 
 echo '=================== Build site ==================='
