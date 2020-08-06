@@ -22,6 +22,9 @@ if [ -f build.sh ]; then
     bash build.sh
 fi
 
+# Get  into source folder
+cd ${SOURCE_FOLDER:=.}
+
 echo '=================== Build site ==================='
 bundle exec jekyll build
 

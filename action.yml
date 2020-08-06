@@ -14,3 +14,8 @@ inputs:
     description: 'override the default `gh-pages` deployment branch'
     required: false
     default: 'gh-pages'
+
+  SOURCE_FOLDER:
+    description: 'override the default `./` folder for sources for website'
+    required: false
+    default: './'

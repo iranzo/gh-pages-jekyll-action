@@ -9,3 +9,4 @@ If there's an existing `build.sh` it will be executed to setup extra steps befor
 ## Environment variables
 
 - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
+- `SOURCE_FOLDER` (optional): override the default `./` folder for building the site
