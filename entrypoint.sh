@@ -19,7 +19,7 @@ bundle install
 
 if [ -f build.sh ]; then
     echo '=================== Running extra setup ==================='
-    sh build.sh
+    bash build.sh
 fi
 
 echo '=================== Build site ==================='
