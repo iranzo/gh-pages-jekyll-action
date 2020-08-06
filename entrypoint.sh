@@ -8,6 +8,10 @@ echo "ACTOR: $GITHUB_ACTOR"
 echo '=================== Prepare bundle ==================='
 touch /github/workspace/Gemfile.lock
 chmod 666 /github/workspace/Gemfile.lock
+
+mkdir -p /github/workspace/.jekyll-cache
+chmod 777 /github/workspace/.jekyll-cache
+
 bundle install
 
 echo '=================== Build site ==================='
