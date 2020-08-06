@@ -6,8 +6,11 @@ echo "REPO: $GITHUB_REPOSITORY"
 echo "ACTOR: $GITHUB_ACTOR"
 
 echo '=================== Prepare bundle ==================='
+chmod 777 /github/workspace/
+
 touch /github/workspace/${SOURCE_FOLDER:=.}/Gemfile.lock
 chmod 666 /github/workspace/${SOURCE_FOLDER:=.}/Gemfile.lock
+
 
 mkdir -p /github/workspace/${SOURCE_FOLDER:=.}/.jekyll-cache
 chmod 777 /github/workspace/${SOURCE_FOLDER:=.}/.jekyll-cache
