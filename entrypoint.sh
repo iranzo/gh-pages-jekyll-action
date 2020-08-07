@@ -6,17 +6,8 @@ echo "REPO: $GITHUB_REPOSITORY"
 echo "ACTOR: $GITHUB_ACTOR"
 
 echo '=================== Prepare bundle ==================='
-chmod 777 /github/workspace/
-
-touch /github/workspace/${SOURCE_FOLDER:=.}/Gemfile.lock
-chmod 666 /github/workspace/${SOURCE_FOLDER:=.}/Gemfile.lock
-
-
-mkdir -p /github/workspace/${SOURCE_FOLDER:=.}/.jekyll-cache
-chmod 777 /github/workspace/${SOURCE_FOLDER:=.}/.jekyll-cache
-
-mkdir -p /github/workspace/_site
-chmod 777 /github/workspace/_site
+umask 0002
+chmod -R u+rwX,go+rX,go-w /github/workspace/
 
 bundle install
 
