@@ -8,8 +8,8 @@ echo "ACTOR: $GITHUB_ACTOR"
 echo '=================== Prepare bundle ==================='
 umask 0002
 
-touch /github/workspace/${SOURCE_FOLDER:=.}/Gemfile.lock
-mkdir -p /github/workspace/${SOURCE_FOLDER:=.}/.jekyll-cache
+touch /github/workspace/${SOURCE_FOLDER:=.}/Gemfile.lock /github/workspace/Gemfile.lock
+mkdir -p /github/workspace/${SOURCE_FOLDER:=.}/.jekyll-cache /github/workspace/.jekyll-cache
 mkdir -p /github/workspace/_site
 chmod -R u+rwX,go+rX,go-w /github/workspace/
 
