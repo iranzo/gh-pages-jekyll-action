@@ -1,6 +1,6 @@
 # GitHub Pages Jekyll Action
 
-This action builds a Jekyll site and deploys it on github pages
+This action builds a Jekyll site and deploys it on GitHub pages
 
 Make sure that requirements such as `Gemfile` are up to date.
 
