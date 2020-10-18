@@ -4,5 +4,5 @@
   "maxRequests": 5,
   "ignoreDigits": true,
   "lang": "en",
-  "dictionary": ["GitHub", "Jekyll"]
+  "dictionary": ["GitHub", "Jekyll", "GHA", "yml", "semver"]
 }
