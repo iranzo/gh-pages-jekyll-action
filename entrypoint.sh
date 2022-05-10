@@ -24,7 +24,9 @@ echo '=================== Publish to GitHub Pages ==================='
 cd _site
 remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 remote_branch=${GH_PAGES_BRANCH:=gh-pages}
+git config --global init.defaultBranch ${remote_branch}
 git init
+git config --global --add safe.directory /github/workspace/_site
 git remote add deploy "$remote_repo"
 git checkout $remote_branch || git checkout --orphan $remote_branch
 git config user.name "${GITHUB_ACTOR}"
