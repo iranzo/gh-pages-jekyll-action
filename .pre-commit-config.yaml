@@ -57,7 +57,7 @@ repos:
       # -   id: detect-aws-credentials
       # - id: fix-encoding-pragma
   - repo: https://github.com/pycqa/flake8
-    rev: 7.1.2
+    rev: 7.2.0
     hooks:
       - id: flake8
   - repo: local
